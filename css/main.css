@@ -9,17 +9,32 @@ body {
     background-color: hsl(204, 93.8%, 93.7%);
 }
 
-.grid-container {
+.grid-container{
+    min-height: 100vh;
     display: grid;
-    min-height: 150vh;
-    grid-template-columns: 10vw 1fr 2fr 10vw;
-    grid-template-rows: 5rem 35vh 1fr;
-    gap: 3vh 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr 2fr;
     grid-template-areas: 
-        "nav nav nav nav"
-        ". prof-pic prof-info ."
-        ". posts posts .";
+    "nav nav"
+    "prof-info prof-pic"
+    "posts posts";
+    row-gap: 3vh;
 }
+
+@media (min-width: 1000px){
+    .grid-container {
+        display: grid;
+        min-height: 150vh;
+        grid-template-columns: 10vw 1fr 2fr 10vw;
+        grid-template-rows: 5rem 35vh 1fr;
+        gap: 3vh 0;
+        grid-template-areas: 
+            "nav nav nav nav"
+            ". prof-pic prof-info ."
+            ". posts posts .";
+    }
+}
+
 
 .area-border {
     border: 2px solid black;
