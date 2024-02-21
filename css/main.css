@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: hsl(215, 20.2%, 65.1%);
+    background-color: hsl(204, 93.8%, 93.7%);
 }
 
 .grid-container {
@@ -49,6 +49,25 @@ body {
 }
 .prof-pic {
     grid-area: prof-pic;
+    /* Justify aligns with column */
+    justify-self: center;
+    /* Align aligns with row */
+    align-self: center;
+}
+
+.img-container {
+    max-width: 100%;
+    max-height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#prof-img {
+    max-width: 100%;
+    height:auto;
+    max-height: 100%;
+    align-self: center;
 }
 
 .prof-info {
