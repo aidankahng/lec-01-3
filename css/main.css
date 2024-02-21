@@ -28,17 +28,25 @@ body {
 .nav {
     grid-area: nav;
     background-color:hsl(198.39999999999998, 93.2%, 59.6%);
-    display: flex;
     position: sticky;
     top: 0;
+}
+
+.nav-links {
+    height: 100%;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.nav > a {
+.nav-links > a {
     text-decoration: none;
+    color: hsl(210, 40%, 98%);
 }
-
+.nav-links > a:hover {
+    border-radius: 3px;
+    background-color: hsl(201.29999999999995, 96.3%, 32.2%);
+}
 .prof-pic {
     grid-area: prof-pic;
 }
