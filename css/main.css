@@ -13,7 +13,7 @@ body {
     display: grid;
     min-height: 150vh;
     grid-template-columns: 10vw 1fr 2fr 10vw;
-    grid-template-rows: 10vh 40vh 1fr;
+    grid-template-rows: 5rem 35vh 1fr;
     gap: 3vh 0;
     grid-template-areas: 
         "nav nav nav nav"
